@@ -11,15 +11,13 @@ useEffect(() => {
 
       .then(res => res.json())
       .then(data => setLeagueInfos(data.league))
-      console.log(leagueInfos)
 
-
-
-  }, [])
+      
+  }, [idLeague])
 
     return (
         <div>
-             <h2> </h2>
+             <h2>{leagueInfos} </h2>
         </div>
     );
 };
